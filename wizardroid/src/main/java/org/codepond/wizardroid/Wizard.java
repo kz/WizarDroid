@@ -192,7 +192,7 @@ public class Wizard implements Disposable, Subscriber {
 			setCurrentStep(mPager.getCurrentItem() - 1);
 		}
 	}
-	
+
 	/**
 	 * Sets the current step of the wizard
 	 * @param stepPosition the position of the step within the WizardFlow
@@ -200,7 +200,7 @@ public class Wizard implements Disposable, Subscriber {
 	public void setCurrentStep(int stepPosition) {
         mPager.setCurrentItem(stepPosition);
 	}
-	
+
 	/**
 	 * Gets the current step position
 	 * @return integer representing the position of the step in the WizardFlow
@@ -208,7 +208,7 @@ public class Wizard implements Disposable, Subscriber {
     public int getCurrentStepPosition() {
 		return mPager.getCurrentItem();
 	}
-	
+
 	/**
 	 * Gets the current step
 	 * @return WizardStep the current WizardStep instance
@@ -216,7 +216,7 @@ public class Wizard implements Disposable, Subscriber {
     public WizardStep getCurrentStep() {
         return ((WizardPagerAdapter)mPager.getAdapter()).getPrimaryItem();
 	}
-	
+
 	/**
 	 * Checks if the current step is the last step in the Wizard
 	 * @return boolean representing the result of the check
@@ -224,7 +224,7 @@ public class Wizard implements Disposable, Subscriber {
     public boolean isLastStep() {
 		return mPager.getCurrentItem() == wizardFlow.getStepsCount() - 1;
 	}
-	
+
 	/**
 	 * Checks if the step is the first step in the Wizard
 	 * @return boolean representing the result of the check
