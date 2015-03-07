@@ -24,7 +24,7 @@ import org.codepond.wizardroid.persistence.ContextManager;
 public abstract class BasicWizardLayout extends WizardFragment implements View.OnClickListener {
 
     private Button nextButton;
-    private Button previousButton;
+    public Button previousButton;
 
     private String nextButtonText;
     private String finishButtonText;
