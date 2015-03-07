@@ -8,7 +8,7 @@
             **You MUST have this ViewPager as the container for wizard's steps  **
             **********************************************************************
     -->
-    <SwipelessViewPager
+    <org.codepond.wizardroid.SwipelessViewPager
         android:id="@id/step_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
